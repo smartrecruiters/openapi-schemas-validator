@@ -1,0 +1,13 @@
+*.iml
+node_modules/
+.idea/
+coverage
+npm-debug.log
+.npmignore
+.istanbul.yml
+.nvmrc
+.eslintignore
+.eslintrc.yaml
+test/
+.github/
+README.hbs

@@ -1,0 +1,44 @@
+{
+  "name": "@smartrecruiters/openapi-schemas-validator",
+  "version": "0.0.1",
+  "description": "Validator for schemas defined in OpenAPI Specification 3.0",
+  "scripts": {
+    "lint": "eslint .",
+    "test": "mocha",
+    "test:coverage:report": "istanbul cover node_modules/.bin/_mocha",
+    "test:coverage:check": "istanbul check-coverage",
+    "test:coverage": "npm run test:coverage:report && npm run test:coverage:check",
+    "readme": "jsdoc2md --template README.hbs *.js lib/*.js > README.md",
+    "preversion": "nsp check && npm run lint && npm run test:coverage && npm run readme"
+  },
+  "author": {
+    "name": "Szymon Kiebzak",
+    "email": "s.kiebzak@gmail.com"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "lodash.forown": "4.4.0",
+    "tv4": "1.3.0",
+    "tv4-formats": "3.0.3"
+  },
+  "devDependencies": {
+    "@smartrecruiters/eslint-config": "3.0.0",
+    "chai": "4.1.2",
+    "eslint": "4.18.2",
+    "istanbul": "0.4.5",
+    "jsdoc-to-markdown": "4.0.1",
+    "mocha": "5.0.2",
+    "nsp": "3.2.1"
+  },
+  "repository": "smartrecruiters/openapi-schemas-validator",
+  "keywords": [
+    "openapi", "validator"
+  ],
+  "engines": {
+    "node": ">= 6.0"
+  },
+  "bugs": {
+    "url": "https://github.com/smartrecruiters/openapi-schemas-validator/issues"
+  },
+  "homepage": "https://github.com/smartrecruiters/openapi-schemas-validator#readme"
+}

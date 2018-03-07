@@ -1,0 +1,34 @@
+# @smartrecruiters/openapi-schemas-validator
+
+[![NPM Version][npm-image]][npm-url]
+[![NPM Downloads][downloads-image]][downloads-url]
+[![Node.js Version][node-version-image]][node-version-url]
+
+Create schema validators for api documentation in OpenAPI Specification 3.x format.
+
+## tv4
+
+This module uses [tv4](https://www.npmjs.com/package/tv4) validator, additionally
+configured with [tv4-formats](https://www.npmjs.com/package/tv4-formats).
+
+This module uses tv4 [`validateMultiple`](https://www.npmjs.com/package/tv4#usage-3-multiple-errors) function,
+with [`checkRecursive`](https://github.com/geraintluff/tv4#cyclical-javascript-objects) param always passed as `true`.
+
+You can configure tv4 validator with following options: 
+ * customFormats - will be passed to [`tv4.addFormat`](https://www.npmjs.com/package/tv4#addformatformat-validationfunction) function 
+ * banUnknownProperties - will be passed to validating function ([The banUnknownProperties flag](https://www.npmjs.com/package/tv4#the-banunknownproperties-flag))
+
+## License
+
+[MIT](LICENSE)
+
+[npm-image]: https://img.shields.io/npm/v/@smartrecruiters/openapi-schemas-validator.svg
+[npm-url]: https://www.npmjs.com/package/@smartrecruiters/openapi-schemas-validator
+[downloads-image]: https://img.shields.io/npm/dm/@smartrecruiters/openapi-schemas-validator.svg
+[downloads-url]: https://www.npmjs.com/package/@smartrecruiters/openapi-schemas-validator
+[node-version-image]: https://img.shields.io/node/v/openapi-schemas-validator.svg
+[node-version-url]: https://nodejs.org/en/download/
+## API
+
+{{depthIncrement}}
+{{>main}}
