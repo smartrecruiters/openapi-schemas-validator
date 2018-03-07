@@ -1,6 +1,6 @@
 {
   "name": "@smartrecruiters/openapi-schemas-validator",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Validator for schemas defined in OpenAPI Specification 3.0",
   "scripts": {
     "lint": "eslint .",
@@ -32,7 +32,8 @@
   },
   "repository": "smartrecruiters/openapi-schemas-validator",
   "keywords": [
-    "openapi", "validator"
+    "openapi",
+    "validator"
   ],
   "engines": {
     "node": ">= 6.0"
