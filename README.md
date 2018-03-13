@@ -17,6 +17,12 @@ with [`checkRecursive`](https://github.com/geraintluff/tv4#cyclical-javascript-o
 You can configure tv4 validator with following options: 
  * customFormats - will be passed to [`tv4.addFormat`](https://www.npmjs.com/package/tv4#addformatformat-validationfunction) function 
  * banUnknownProperties - will be passed to validating function ([The banUnknownProperties flag](https://www.npmjs.com/package/tv4#the-banunknownproperties-flag))
+ 
+## OpenAPI Specification 3.0 specific features
+
+Currently @smartrecruiters/openapi-schemas-validator supports `nullable` field.
+
+Please refer to https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.1.md#fixed-fields-20.
 
 ## License
 
