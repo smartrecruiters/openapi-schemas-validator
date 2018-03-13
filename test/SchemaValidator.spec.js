@@ -34,6 +34,31 @@ describe('Schemas validator', () => {
             .to.have.length(1)
             .to.have.nested.property('[0].code', 500)
     })
+
+    it('should validate object with custom format', () => {
+        expect(new SchemaValidator(spec, {customFormats})
+            .validate({b: 'BBC'}, '#/components/schemas/A'))
+            .to.have.length(1)
+            .to.have.nested.property('[0].code', 500)
+    })
+
+    it('should accept nullable in ref', () => {
+        expect(new SchemaValidator(spec, {customFormats})
+            .validate({a: null}, '#/components/schemas/A'))
+            .to.be.undefined
+    })
+
+    it('should accept nullable explicitly', () => {
+        expect(new SchemaValidator(spec, {customFormats})
+            .validate(null, {type: 'string', nullable: true}))
+            .to.be.undefined
+    })
+
+    it('should accept nullable explicitly', () => {
+        expect(new SchemaValidator(spec, {customFormats})
+            .validate(null, {nullable: true}))
+            .to.be.undefined
+    })
 })
 
 const spec = {
@@ -43,7 +68,8 @@ const spec = {
                 type: 'object',
                 properties: {
                     a: {
-                        type: 'string'
+                        type: 'string',
+                        nullable: 'true'
                     },
                     b: {
                         type: 'string',
