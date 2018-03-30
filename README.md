@@ -3,6 +3,7 @@
 [![NPM Version][npm-image]][npm-url]
 [![NPM Downloads][downloads-image]][downloads-url]
 [![Node.js Version][node-version-image]][node-version-url]
+[![Licence][license-image]][license-url]
 
 Create schema validators for api documentation in OpenAPI Specification 3.x format.
 
@@ -32,8 +33,10 @@ Please refer to https://github.com/OAI/OpenAPI-Specification/blob/master/version
 [npm-url]: https://www.npmjs.com/package/@smartrecruiters/openapi-schemas-validator
 [downloads-image]: https://img.shields.io/npm/dm/@smartrecruiters/openapi-schemas-validator.svg
 [downloads-url]: https://www.npmjs.com/package/@smartrecruiters/openapi-schemas-validator
-[node-version-image]: https://img.shields.io/node/v/openapi-schemas-validator.svg
+[node-version-image]: https://img.shields.io/node/v/@smartrecruiters/openapi-schemas-validator.svg
 [node-version-url]: https://nodejs.org/en/download/
+[license-url]: https://github.com/smartrecruiters/openapi-schemas-validator/blob/master/LICENSE
+[license-image]: https://img.shields.io/npm/l/@smartrecruiters/openapi-schemas-validator.svg
 ## API
 
 

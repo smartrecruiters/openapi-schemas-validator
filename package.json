@@ -8,7 +8,7 @@
     "test:coverage:report": "istanbul cover node_modules/.bin/_mocha",
     "test:coverage:check": "istanbul check-coverage",
     "test:coverage": "npm run test:coverage:report && npm run test:coverage:check",
-    "readme": "jsdoc2md --template README.hbs *.js lib/*.js > README.md",
+    "readme": "jsdoc2md --template docs/docs.hbs *.js lib/*.js > README.md",
     "preversion": "nsp check && npm run lint && npm run test:coverage && npm run readme"
   },
   "author": {
@@ -25,10 +25,10 @@
   "devDependencies": {
     "@smartrecruiters/eslint-config": "3.0.0",
     "chai": "4.1.2",
-    "eslint": "4.18.2",
+    "eslint": "4.19.1",
     "istanbul": "0.4.5",
     "jsdoc-to-markdown": "4.0.1",
-    "mocha": "5.0.4",
+    "mocha": "5.0.5",
     "nsp": "3.2.1"
   },
   "repository": "smartrecruiters/openapi-schemas-validator",
@@ -37,7 +37,7 @@
     "validator"
   ],
   "engines": {
-    "node": ">= 6.0"
+    "node": ">=6.0.0"
   },
   "bugs": {
     "url": "https://github.com/smartrecruiters/openapi-schemas-validator/issues"
