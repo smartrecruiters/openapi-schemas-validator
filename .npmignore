@@ -3,9 +3,10 @@ node_modules/
 .idea/
 coverage
 npm-debug.log
+.nyc_output/
 .npmignore
-.istanbul.yml
 .nvmrc
+.nycrc
 .eslintignore
 .eslintrc.yaml
 test/
