@@ -28,6 +28,19 @@ describe('Schemas validator', () => {
             .to.be.undefined
     })
 
+    it('should pass valid object with unicode format', () => {
+        expect(new SchemaValidator(spec, {})
+            .validate({c: 'ひらがな'}, '#/components/schemas/A'))
+            .to.be.undefined
+    })
+
+    it('should validate object with unicode format', () => {
+        expect(new SchemaValidator(spec, {})
+            .validate({c: ' ひらがな$^'}, '#/components/schemas/A'))
+            .to.have.length(1)
+            .to.have.nested.property('[0].code', 500)
+    })
+
     it('should validate object with custom format', () => {
         expect(new SchemaValidator(spec, {customFormats})
             .validate({b: 'BBC'}, '#/components/schemas/A'))
@@ -74,6 +87,10 @@ const spec = {
                     b: {
                         type: 'string',
                         format: 'containsA'
+                    },
+                    c: {
+                        type: 'string',
+                        format: 'unicodeString'
                     }
                 }
             },
