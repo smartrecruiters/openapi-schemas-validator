@@ -1,3 +1,9 @@
+## 0.3.1 (2022-11-20)
+
+* update `tv4-formats` package to resolve security vulnerabilities (#12) ([6992818](https://github.com/smartrecruiters/openapi-schemas-validator/commit/6992818)), closes [#12](https://github.com/smartrecruiters/openapi-schemas-validator/issues/12)
+
+
+
 ## 0.3.0 (2019-06-19)
 
 * Create .travis.yml ([85e6318](https://github.com/smartrecruiters/openapi-schemas-validator/commit/85e6318))
