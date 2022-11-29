@@ -18,7 +18,7 @@
     "lodash.clonedeep": "4.5.0",
     "lodash.forown": "4.4.0",
     "tv4": "1.3.0",
-    "tv4-formats": "3.0.3"
+    "tv4-formats": "3.0.4"
   },
   "devDependencies": {
     "@smartrecruiters/eslint-config": "4.3.0",
