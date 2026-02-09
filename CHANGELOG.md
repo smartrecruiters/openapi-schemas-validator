@@ -1,3 +1,9 @@
+## 0.3.2 (2026-02-09)
+
+* update `tv4-formats` package to resolve security vulnerabilities (#12) ([8fecfcc](https://github.com/smartrecruiters/openapi-schemas-validator/commit/8fecfcc)), closes [#14](https://github.com/smartrecruiters/openapi-schemas-validator/pull/14)
+
+
+
 ## 0.3.1 (2022-11-20)
 
 * update `tv4-formats` package to resolve security vulnerabilities (#12) ([6992818](https://github.com/smartrecruiters/openapi-schemas-validator/commit/6992818)), closes [#12](https://github.com/smartrecruiters/openapi-schemas-validator/issues/12)
