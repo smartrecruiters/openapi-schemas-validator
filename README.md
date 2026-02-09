@@ -97,3 +97,9 @@ Validate object against schema. Schema can be passed explicitly or reference a s
 | entity | <code>Object</code> | object to validate |
 | schema | <code>Object</code> \| <code>string</code> | object schema |
 
+
+## Publishing to NPM
+
+This project follows SmartRecruiters process for publishing open-sourced NPM libraries to the public npm registry.
+
+For the complete workflow and the latest instructions, refer to the internal guide available on Confluence: [Publishing opensourced NPM libraries](https://smartrecruiters.atlassian.net/wiki/spaces/TEAMS/pages/786104323/Publishing+opensourced+NPM+libraries).
